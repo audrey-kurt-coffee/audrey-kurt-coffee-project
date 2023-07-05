@@ -8,15 +8,10 @@ td, th {
     padding: 5px 10px;
 }
 .cute-background{
-    background-image: url("img/Kawaii-wallpaper-cute.webp");
-    object-fit: cover;
+    background-color: lightpink;
 
 }
-.cute-background2{
-    background-image: url("img/cute-wallpaper.webp");
-    object-fit: cover;
 
-}
 .coffee-name-text-area{
     border: black solid 2px;
     background-color: white;
