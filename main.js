@@ -50,7 +50,7 @@ let coffees = [
 let tbody = document.querySelector('#coffees');
 let submitButton = document.querySelector('#submit');
 let roastSelection = document.querySelector('#roast-selection');
-let searchCoffee = document.querySelector('#coffees.value');
+
 
 tbody.innerHTML = renderCoffees(coffees);
 
