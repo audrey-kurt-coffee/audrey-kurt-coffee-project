@@ -69,3 +69,9 @@ coffeeName.addEventListener('input', (e) => {
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 })
+//
+// let cuteCupAnimation = document.getElementsByClassName('cute-cup');
+// cuteCupAnimation.addEventListener('click', () => {
+//     cuteCupAnimation.style.transform = "translateY(10000%)";
+//     cuteCupAnimation.style.transition = "7s";
+// });

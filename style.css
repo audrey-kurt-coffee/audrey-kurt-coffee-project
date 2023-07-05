@@ -7,71 +7,101 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
-.cute-background{
-    background-color: lightpink;
 
+.cute-background {
+    background-image: url("img/hello-kitty.jpeg");
+    object-fit: cover;
+    background-attachment: fixed;
 }
 
-.coffee-name-text-area{
+.coffee-name-text-area {
     border: black solid 2px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.47);
+
 
 }
-.rainbow-text{
+
+.rainbow-text {
     animation: rainbow 2.5s linear;
     animation-iteration-count: infinite;
 }
 
 /*rainbow*/
 
-@keyframes rainbow{
-    100%,0%{
-        color: rgb(255,0,0);
+@keyframes rainbow {
+    100%, 0% {
+        color: rgb(255, 0, 0);
     }
-    8%{
-        color: rgb(255,127,0);
+    8% {
+        color: rgb(255, 127, 0);
     }
-    16%{
-        color: rgb(255,255,0);
+    16% {
+        color: rgb(255, 255, 0);
     }
-    25%{
-        color: rgb(127,255,0);
+    25% {
+        color: rgb(127, 255, 0);
     }
-    33%{
-        color: rgb(0,255,0);
+    33% {
+        color: rgb(0, 255, 0);
     }
-    41%{
-        color: rgb(0,255,127);
+    41% {
+        color: rgb(0, 255, 127);
     }
-    50%{
-        color: rgb(0,255,255);
+    50% {
+        color: rgb(0, 255, 255);
     }
-    58%{
-        color: rgb(0,127,255);
+    58% {
+        color: rgb(0, 127, 255);
     }
-    66%{
-        color: rgb(0,0,255);
+    66% {
+        color: rgb(0, 0, 255);
     }
-    75%{
-        color: rgb(127,0,255);
+    75% {
+        color: rgb(127, 0, 255);
     }
-    83%{
-        color: rgb(255,0,255);
+    83% {
+        color: rgb(255, 0, 255);
     }
-    91%{
-        color: rgb(255,0,127);
+    91% {
+        color: rgb(255, 0, 127);
     }
-}
-.rounded{
-    border-radius: 50%;
-}
-/*nyancat*/
-.nyancat {
-    position: relative;
-    float: left;
 }
 
-.nyancat:hover {
-    transform: translateX(1500%);
-    transition: 1s;
+.rounded {
+    border-radius: 100%;
+}
+
+
+.custom-Header {
+    width: 100%;
+    height: 150px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+    padding: 20px;
+}
+
+.custom-title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 80px;
+}
+.cloud{
+    background-image: url("img/cute-cloud-kawaii-comic-character-icon-700-218790215.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    opacity: .8;
+    text-align: center;
+}
+
+.cute-cup{
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border-radius: 50%;
+}
+.cute-cup:hover{
+    transform: translateY(10000%);
+    transition: 10s;
 }
