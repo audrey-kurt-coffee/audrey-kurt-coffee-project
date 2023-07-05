@@ -11,8 +11,8 @@
     <title>Cutea Cafe</title>
 
 </head>
-<body>
-<header class="p-3 text-bg-warning">
+<body class="cute-background">
+<header class="p-3 cute-background">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -21,25 +21,26 @@
                 </svg>
             </a>
 
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 text-secondary">Cutea Cafe</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Drink Menu</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">About Us</a></li>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 coffee-name-text-area">
+                <li><a href="#" class="nav-link px-2 rainbow-text">Cutea Cafe</a></li>
+                <li><a href="#" class="nav-link px-2 rainbow-text">Drink Menu</a></li>
+                <li><a href="#" class="nav-link px-2 rainbow-text">About Us</a></li>
             </ul>
 
             <div class="text-end">
-                <button type="button" class="btn btn-outline-light me-2">Login</button>
-                <button type="button" class="btn btn-warning">Sign-up</button>
+                <button type="button" class="btn btn-outline-light coffee-name-text-area me-2 rainbow-text">Login</button>
             </div>
         </div>
     </div>
 </header>
-
+<div class="nyancat">
+    <img src="img/giphy-cat.gif" alt="cat" style=" border-radius: 100%">
+</div>
 <main class="container">
     <div class="row">
 
         <!--Dropdown Roast Selection-->
-        <h1>Coffee Selection!</h1>
+        <h1 class="rainbow-text coffee-name-text-area w-50">Coffee Selection!</h1>
             <form class="d-flex">
                 <label for="roast-selection"></label>
                 <select id="roast-selection">
@@ -62,9 +63,9 @@
 <!--            End Search Bar-->
 
 <!--            Display coffee names-->
-<div class="container">
+<div class="container cute-background2">
     <div class="row">
-        <div id="coffees" class="result-coffee col">
+        <div id="coffees" class="result-coffee col coffee-name-text-area rainbow-text">
 
         </div>
         <div class="roast col">
@@ -73,7 +74,6 @@
     </div>
 </div>
 <!--        End Display coffee names-->
-
 
 <script src="main.js"></script>
 

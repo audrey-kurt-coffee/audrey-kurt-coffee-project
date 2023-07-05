@@ -7,3 +7,76 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+.cute-background{
+    background-image: url("img/Kawaii-wallpaper-cute.webp");
+    object-fit: cover;
+
+}
+.cute-background2{
+    background-image: url("img/cute-wallpaper.webp");
+    object-fit: cover;
+
+}
+.coffee-name-text-area{
+    border: black solid 2px;
+    background-color: white;
+
+}
+.rainbow-text{
+    animation: rainbow 2.5s linear;
+    animation-iteration-count: infinite;
+}
+
+/*rainbow*/
+
+@keyframes rainbow{
+    100%,0%{
+        color: rgb(255,0,0);
+    }
+    8%{
+        color: rgb(255,127,0);
+    }
+    16%{
+        color: rgb(255,255,0);
+    }
+    25%{
+        color: rgb(127,255,0);
+    }
+    33%{
+        color: rgb(0,255,0);
+    }
+    41%{
+        color: rgb(0,255,127);
+    }
+    50%{
+        color: rgb(0,255,255);
+    }
+    58%{
+        color: rgb(0,127,255);
+    }
+    66%{
+        color: rgb(0,0,255);
+    }
+    75%{
+        color: rgb(127,0,255);
+    }
+    83%{
+        color: rgb(255,0,255);
+    }
+    91%{
+        color: rgb(255,0,127);
+    }
+}
+.rounded{
+    border-radius: 50%;
+}
+/*nyancat*/
+.nyancat {
+    position: relative;
+    float: left;
+}
+
+.nyancat:hover {
+    transform: translateX(1500%);
+    transition: 1s;
+}
