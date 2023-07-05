@@ -40,7 +40,6 @@
 
         <!--Dropdown Roast Selection-->
         <h1>Coffee Selection!</h1>
-        <div class="col">
             <form class="d-flex">
                 <label for="roast-selection"></label>
                 <select id="roast-selection">
@@ -53,7 +52,8 @@
 
             <!--            Search Bar-->
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Search Drinks"
+                <input id="searchbar" type="search" class="form-control form-control-dark text-bg-light"
+                       placeholder="Search Drinks"
                        aria-label="Search">
             </form>
         </div>
@@ -64,10 +64,10 @@
 <!--            Display coffee names-->
 <div class="container">
     <div class="row">
-        <div class="coffee-name col">
+        <div id="coffees" class="result-coffee col">
 
         </div>
-        <div class ="roast col">
+        <div class="roast col">
 
         </div>
     </div>
