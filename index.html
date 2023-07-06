@@ -18,9 +18,9 @@
 <header class="p-3 cute-background">
     <div class="container">
         <div class="align-items-center justify-content-center mb-2 d-flex">
-<h1 class="rainbow-text custom-Header custom-title cloud">
-    Cutea Cafe
-</h1>
+            <h1 class="rainbow-text custom-Header custom-title cloud">
+                Cutea Cafe
+            </h1>
             <ul class="nav col-12 col-lg-auto mb-2 justify-content-center custom-Header px-5 bg-image cloud gap-5">
                 <li class="mt-5"><a href="#" class="nav-link px-2 rainbow-text">Menu</a></li>
                 <li class="mt-5"><a href="#" class="nav-link px-2 rainbow-text">About Us</a></li>
@@ -30,41 +30,49 @@
     </div>
 </header>
 <main class="container">
-    <div class="row">
+    <div class="row d-flex w-100">
 
         <!--Dropdown Roast Selection-->
-        <h1 class="coffee-name-text-area w-50">Coffee Selection!</h1>
+        <h1 class="coffee-name-text-area w-100 col-12">Coffee Selection! </h1>
 
+        <!--            Search Bar-->
+        <form class="col-lg-12 m-3 mb-lg-0 me-lg-3 d-flex w-75 coffee-name-text-area" role="search"><h2>Type in Coffee Selection</h2>
+            <input id="coffee-name" type="search" class="form-control form-control-dark "
+                   placeholder="Search Coffees"
+                   aria-label="Search">
+            <img class="sparkle" src="img/giphy.gif"/>
 
-            <!--            Search Bar-->
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                <input id="coffee-name" type="search" class="form-control form-control-dark text-bg-light"
-                       placeholder="Search Drinks"
-                       aria-label="Search">
-            </form>
-        </div>
+        </form>
+<!--            End Search Bar-->
+
+<!--        Start dropdown menu-->
+        <form class ="coffee-name-text-area m-3 w-75">
+            <label for="roast-selection"><h3>Select Roast Option</h3></label>
+            <select id="roast-selection">
+                <option value="light">Light</option>
+                <option value="medium">Medium</option>
+                <option value="dark">Dark</option>
+            </select>
+            <input id="submit" type="submit"/>
+            <img class="sparkle" src="img/giphy.gif"/>
+        </form>
+<!--End dropdown menu-->
+
+        <img class="sparkle" src="img/giphy.gif"/>
+    </div>
     </div>
 </main>
-<!--            End Search Bar-->
 
 <!--            Display coffee names-->
 <div class="container">
     <div class="row">
-        <div id="coffees" class="result-coffee col coffee-name-text-area ">
+        <div id="coffees" class="result-coffee col coffee-name-text-area">
 
         </div>
         <div class="roast col">
-            <form class="d-flex">
-                <label for="roast-selection"></label>
-                <select id="roast-selection">
-                    <option value="light">Light</option>
-                    <option value="medium">Medium</option>
-                    <option value="dark">Dark</option>
-                </select>
-                <input id="submit" type="submit"/>
-            </form>
+
             <div class="justify-content-center d-flex">
-            <img src="img/cute-cup.png" alt="coffee" class="cute-cup">
+                <img src="img/cute-cup.png" alt="coffee" class="cute-cup">
 
             </div>
         </div>

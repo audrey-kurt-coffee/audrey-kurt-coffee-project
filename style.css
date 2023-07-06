@@ -15,8 +15,8 @@ td, th {
 }
 
 .coffee-name-text-area {
-    border: black solid 2px;
-    background-color: rgba(255, 255, 255, 0.47);
+    border: #fca2a2 dotted 2px;
+    background-color: rgba(253, 232, 232, 0.47);
 
 
 }
@@ -104,4 +104,9 @@ td, th {
 .cute-cup:hover{
     transform: translateY(10000%);
     transition: 10s;
+}
+
+.sparkle {
+    width: 30px;
+    height: 30px;
 }

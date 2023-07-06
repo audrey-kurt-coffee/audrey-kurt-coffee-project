@@ -32,10 +32,10 @@ function updateCoffees(e) {
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 
 let coffees = [
-    {id: 1, name: 'Light City', roast: 'light'},
-    {id: 2, name: 'Half City', roast: 'light'},
-    {id: 3, name: 'Cinnamon', roast: 'light'},
-    {id: 4, name: 'City', roast: 'medium'},
+    {id: 1, name: 'Pawfee Coffee', roast: 'light'},
+    {id: 2, name: 'Panda Espresso', roast: 'light'},
+    {id: 3, name: 'Cinnabun Cold Brew', roast: 'light'},
+    {id: 4, name: 'JaPANsa', roast: 'medium'},
     {id: 5, name: 'American', roast: 'medium'},
     {id: 6, name: 'Breakfast', roast: 'medium'},
     {id: 7, name: 'High', roast: 'dark'},
