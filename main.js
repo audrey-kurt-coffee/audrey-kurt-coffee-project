@@ -43,7 +43,7 @@ let coffees = [
     {id: 1, name: 'Perfect Match-a', roast: 'cu-tea'},
     {id: 2, name: 'New Pen-guinea', roast: 'f-light roast'},
     {id: 3, name: 'Cinnabun Cold Brew', roast: 'f-light roast'},
-    {id: 4, name: 'Boba-nana Iced Latte', roast: 'medi-chum roast'},
+    {id: 4, name: 'Boba-nana', roast: 'medi-chum roast'},
     {id: 5, name: 'How you BEAN', roast: 'medi-chum roast'},
     {id: 6, name: 'Koi-ffee', roast: 'medi-chum roast'},
     {id: 7, name: 'Bear-y Good Latte', roast: 'bear-y dark'},
