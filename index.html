@@ -15,13 +15,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Cutea Cafe</title>
-
 </head>
+
 <body class="cute-background">
+
+<!--start of nav bar-->
 <header class="p-3 cute-background">
     <div class="container">
         <div class="align-items-center justify-content-center mb-2 d-flex">
-           <h1 class="rainbow-text custom-Header custom-title cloud text-align-center">
+            <h1 class="rainbow-text custom-Header custom-title cloud text-align-center">
                 Cutea Cafe
             </h1>
             <ul class="nav col-12 col-lg-auto mb-2 justify-content-center custom-Header px-5 bg-image cloud gap-5">
@@ -32,63 +34,76 @@
         </div>
     </div>
 </header>
+<!--end of nav bar-->
+
+<!--Coffee Selection Heading-->
 <main class="container justify-content-start w-50">
-    <div class="d-flex coffee-name-text-area">
-
-        <h1 class=" cursive col d-flex justify-content-center p-2">Coffee Selection! </h1>
-
+    <div class="d-flex coffee-name-text-area mb-3">
+        <h1 class="cursive col d-flex justify-content-center p-2"><img class="sparkle" src="img/giphy.gif"/>Coffee Selection!<img class="sparkle" src="img/giphy.gif"/></h1>
     </div>
-
 </main>
+<!--End coffee selection heading-->
 
-<!--            Display coffee names-->
 <div class="container">
     <div class="row">
-        <!--        Display Coffee Selection-->
+        <!--            Display coffee names-->
         <div id="coffees" class=" cursive result-coffee col-lg-6 coffee-name-text-area">
         </div>
         <!--        End Display of coffee selection-->
 
-        <div class="roast col-lg-6 coffee-name-text-area">
-            <!--            Search Bar-->
+        <!--            Search Bar-->
+        <div class="col-lg-6">
             <form
                     class="coffee-name-text-area px-2 d-flex flex-column justify-content-center align-items-center cursive"
                     role="search">
-                <h1 class="col-lg-6 d-flex justify-content-center p-2">Type in Coffee Selection</h1>
-                <input id="coffee-name" type="search" class="form-control form-control-dark "
+                <h1 class="col-lg-6 d-flex justify-content-center p-2 w-100"><img class="sparkle" src="img/giphy.gif"/>Type Coffee Name<img class="sparkle" src="img/giphy.gif"/></h1>
+                <input id="coffee-name" type="search" class="my-3 form-control form-control-dark "
                        placeholder="Search Coffees"
                        aria-label="Search">
             </form>
             <!--            End Search Bar-->
 
             <!--        Start dropdown menu-->
-            <form class="coffee-name-text-area mt-5 col-lg-6 w-100 cursive">
-                <label for="roast-selection"><h3>Select Roast Option</h3></label>
-                <select id="roast-selection">
+            <div class ="roast">
+            <form class="coffee-name-text-area col-lg-6 w-100 mb-3 cursive d-flex flex-column justify-content-center align-items-center">
+                <label for="roast-selection" class = "flex-grow my-2"><h3><img class="sparkle" src="img/giphy.gif"/>Select Roast Option<img class="sparkle" src="img/giphy.gif"/></h3></label>
+                <select id="roast-selection" class ="w-75 py-2 my-2">
                     <option value="light">Light</option>
                     <option value="medium">Medium</option>
                     <option value="dark">Dark</option>
                 </select>
-                <input id="submit" type="submit"/>
-                <img class="sparkle" src="img/giphy.gif"/>
+                <button id="submit" class="btn bg-light border-white rounded"type="submit"><img class="sparkle" src="img/giphy.gif"/>Search Roasts<img class="sparkle" src="img/giphy.gif"/></button>
+        </div>
+
             </form>
             <!--End dropdown menu-->
 
-            <input class="cursive" type="textarea" placeholder="Add Coffee" id="userInputCoffee">
-            <button class="cursive" type="button" onclick="addCoffeeInput()">Add Coffee to List</button>
+            <!--User add Coffee Names-->
+            <div class="coffee-name-text-area">
+                <input class="cursive" type="textarea" placeholder="Add Coffee" id="userInputCoffee">
+                <button class="cursive" type="button" onclick="addCoffeeInput()">Add Coffee to List</button>
+            </div>
+            <!--            End user add coffee-->
+
+            <!--            coffee cup animation-->
             <div class=" cursive justify-content-center d-flex">
                 <img src="img/cute-cup.png" alt="coffee" class="cute-cup mt-5">
             </div>
+            <!--end coffee cup animation-->
+
         </div>
+        <!--        End of right hand column-->
     </div>
+    <!--    End of right hand row-->
 </div>
-<!--        End Display coffee names-->
+<!--        End of right hand container-->
+
 <footer class=" m-5">
-<!--    <ul>-->
-<!--        <li>icon</li>-->
-<!--        <li>icon</li>-->
-<!--        <li>icon</li>-->
-<!--    </ul>-->
+    <!--    <ul>-->
+    <!--        <li>icon</li>-->
+    <!--        <li>icon</li>-->
+    <!--        <li>icon</li>-->
+    <!--    </ul>-->
 
 </footer>
 <script src="main.js"></script>
