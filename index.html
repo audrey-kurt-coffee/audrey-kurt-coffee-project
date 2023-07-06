@@ -51,8 +51,10 @@
 <div class="container">
     <div class="row">
         <!--            Display coffee names-->
-        <div id="coffees" class=" cursive result-coffee col-lg-6 coffee-name-text-area">
+
+        <div id="coffees" class="cursive result-coffee col-lg-6 coffee-name-text-area w-50">
         </div>
+
         <!--        End Display of coffee selection-->
 
         <!--            Search Bar-->
@@ -74,12 +76,12 @@
                     <label for="roast-selection" class="flex-grow my-2"><h3><img class="sparkle" src="img/giphy.gif"/>Select
                         Roast Option<img class="sparkle" src="img/giphy.gif"/></h3></label>
                     <select id="roast-selection" class="w-75 py-2 my-2">
-                        <option value="light">Light</option>
-                        <option value="medium">Medium</option>
-                        <option value="dark">Dark</option>
+                        <option value="cu-tea">teas</option>
+                        <option value="f-light roast">f-light roast</option>
+                        <option value="medi-chum roast">medi-chum roast</option>
+                        <option value="bear-y dark">bear-y dark</option>
                     </select>
-                    <button id="submit" class="btn bg-light border-white rounded" type="submit"><img class="sparkle"
-                                                                                                     src="img/giphy.gif"/>Search
+                    <button id="submit" class="btn bg-light border-white rounded" type="submit"><img class="sparkle" src="img/giphy.gif"/>Search
                         Roasts<img class="sparkle" src="img/giphy.gif"/></button>
                 </form>
             </div>
@@ -95,16 +97,17 @@
             <form>
                 <label for="add-coffee-roast">
                     <select class="roast-dropdown" id="add-coffee-roast">
-                        <option>light</option>
-                        <option>medium</option>
-                        <option>dark</option>
+                        <option>cu-tea</option>
+                        <option>f-light roast</option>
+                        <option>medi-chum roast</option>
+                        <option>bear-y dark</option>
                     </select>
                 </label>
 
                 <label for="add-coffee-name">
                     <input class="input-name" id="add-coffee-name" type="text" placeholder="Enter name">
                 </label>
-                <input class="btn" id="add-btn" type="submit"/>
+                <input class="btn" id="add-coffee-btn" type="submit"/>
             </form>
             <!--            End user add coffee-->
 

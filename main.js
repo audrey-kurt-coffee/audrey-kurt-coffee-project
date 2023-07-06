@@ -2,7 +2,15 @@
 
 function renderCoffee(coffee) {
     let html = '<div class="coffee">';
-    // html += '<td>' + coffee.id + '</td>';
+    if (coffee.roast === 'cu-tea') {
+        html += '<img src="img/kitty-latte.jpg" class="coffee-pic">';
+    } else if (coffee.roast === 'f-light roast') {
+        html += '<img src="img/penguin-foam-latte.jpg" class="coffee-pic">';
+    } else if (coffee.roast === 'medi-chum roast') {
+        html += '<img src ="img/koi-latte.jpg" class="coffee-pic">';
+    } else if (coffee.roast === 'bear-y dark') {
+        html += '<img src= "img/panda-coffee.jpg" class="coffee-pic">';
+    }
     html += '<h3>' + coffee.name + '</h3>';
     html += '<p>' + coffee.roast + '</p>';
     html += '</div>';
@@ -32,31 +40,32 @@ function updateCoffees(e) {
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 
 let coffees = [
-    {id: 1, name: 'Pawfee Coffee', roast: 'light'},
-    {id: 2, name: 'Panda Espresso', roast: 'light'},
-    {id: 3, name: 'Cinnabun Cold Brew', roast: 'light'},
-    {id: 4, name: 'Perfect Match-a', roast: 'medium'},
-    {id: 5, name: 'How you BEAN', roast: 'medium'},
-    {id: 6, name: '', roast: 'medium'},
-    {id: 7, name: 'High', roast: 'dark'},
-    {id: 8, name: 'Continental', roast: 'dark'},
-    {id: 9, name: 'New Orleans', roast: 'dark'},
-    {id: 10, name: 'European', roast: 'dark'},
-    {id: 11, name: 'Espresso', roast: 'dark'},
-    {id: 12, name: 'Viennese', roast: 'dark'},
-    {id: 13, name: 'Italian', roast: 'dark'},
-    {id: 14, name: 'French', roast: 'dark'},
+    {id: 1, name: 'Perfect Match-a', roast: 'cu-tea'},
+    {id: 2, name: 'New Pen-guinea', roast: 'f-light roast'},
+    {id: 3, name: 'Cinnabun Cold Brew', roast: 'f-light roast'},
+    {id: 4, name: 'Boba-nana Iced Latte', roast: 'medi-chum roast'},
+    {id: 5, name: 'How you BEAN', roast: 'medi-chum roast'},
+    {id: 6, name: 'Koi-ffee', roast: 'medi-chum roast'},
+    {id: 7, name: 'Bear-y Good Latte', roast: 'bear-y dark'},
+    {id: 8, name: 'Red Ears', roast: 'bear-y dark'},
+    {id: 9, name: 'Pawfee Coffee', roast: 'bear-y dark'},
+    {id: 10, name: 'Panda Espresso', roast: 'bear-y dark'},
+    {id: 11, name: 'John SugarCane', roast: 'bear-y dark'},
+    {id: 12, name: 'Bamboo-zled Bear', roast: 'bear-y dark'},
+    {id: 13, name: 'Black Ears, White Tummy', roast: 'bear-y dark'},
+    {id: 14, name: 'Beautiful Butterfly Pea Tea', roast: 'cu-tea'},
 ];
 let tbody = document.querySelector('#coffees');
 
 let submitButton = document.querySelector('#submit');
 let roastSelection = document.querySelector('#roast-selection');
 let coffeeName = document.querySelector('#coffee-name')
-let addCoffeeRoast = document.querySelector('#add-coffee-roast');
 let addCoffeeName = document.querySelector('#add-coffee-name');
-let addCoffeeBtn =  document.querySelector('#add-coffee-btn');
+let addCoffeeRoast = document.querySelector('#add-coffee-roast');
+let addCoffeeBtn = document.querySelector('#add-coffee-btn');
 tbody.innerHTML = renderCoffees(coffees);
 submitButton.addEventListener('click', updateCoffees);
+addCoffeeBtn.addEventListener('click', addCoffeeInput);
 
 
 coffeeName.addEventListener('input', (e) => {
@@ -73,8 +82,7 @@ coffeeName.addEventListener('input', (e) => {
 })
 
 
-
-function addCoffeeInput (e) {
+function addCoffeeInput(e) {
     e.preventDefault();
     let newCoffee = {id: (coffees.length + 1), name: addCoffeeName.value, roast: addCoffeeRoast.value};
     coffees.push(newCoffee);
@@ -82,24 +90,16 @@ function addCoffeeInput (e) {
     localStorage.setItem('coffeeStorage', JSON.stringify(coffees));
     alert(`Adding ${newCoffee.name} to coffee list!`)
 }
+
 addCoffeeInput();
-addCoffeeBtn.addEventListener('click', addCoffeeInput);
-
-
-
-
-
-
-
-
 
 
 // Attempt to allow user to add coffee selection
 // const setNewCoffee = localStorage.setItem("");
 
 
-
 // const addCoffeeInput = () => {
+
 //     let newCoffee = { id:(coffees.length + 1),name:add}
 //     const inputCoffee = document.getElementById('userInputCoffee');
 //     coffees.push(inputCoffee.value);
