@@ -18,6 +18,9 @@ td, th {
     object-fit: cover;
     background-attachment: fixed;
 }
+.pink-background{
+    background-color: #F8AEC5;
+}
 
 .coffee-name-text-area {
     border: #fca2a2 dotted 2px;
@@ -118,7 +121,6 @@ td, th {
 .hello-coffee{
     width: 300px;
     height: 300px;
-    margin-right: 100px;
     /*margin: 10px;*/
 }
 
@@ -130,10 +132,18 @@ td, th {
 div.coffee {
     border: 1px dashed white;
     background-color: rgba(255, 255, 255, 0.35);
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
     text-align: center;
+}
+
+.roast-dropdown{
+    width: 100%;
+}
+.width-full{
+    width: 400px;
+    height: 30px;
 }
