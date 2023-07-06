@@ -52,10 +52,12 @@ let tbody = document.querySelector('#coffees');
 let submitButton = document.querySelector('#submit');
 let roastSelection = document.querySelector('#roast-selection');
 let coffeeName = document.querySelector('#coffee-name')
-
+let addCoffeeRoast = document.querySelector('#add-coffee-roast');
+let addCoffeeName = document.querySelector('#add-coffee-name');
+let addCoffeeBtn =  document.querySelector('#add-coffee-btn');
 tbody.innerHTML = renderCoffees(coffees);
-
 submitButton.addEventListener('click', updateCoffees);
+
 
 coffeeName.addEventListener('input', (e) => {
     e.preventDefault(); // don't submit the form, we just want to update the data
@@ -70,25 +72,37 @@ coffeeName.addEventListener('input', (e) => {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 })
 
+
+
+function addCoffeeInput (e) {
+    e.preventDefault();
+    let newCoffee = {id: (coffees.length + 1), name: addCoffeeName.value, roast: addCoffeeRoast.value};
+    coffees.push(newCoffee);
+    tbody.innerHTML = renderCoffees(coffees);
+    localStorage.setItem('coffeeStorage', JSON.stringify(coffees));
+    alert(`Adding ${newCoffee.name} to coffee list!`)
+}
+addCoffeeInput();
+addCoffeeBtn.addEventListener('click', addCoffeeInput);
+
+
+
+
+
+
+
+
+
+
 // Attempt to allow user to add coffee selection
 // const setNewCoffee = localStorage.setItem("");
 
 
 
-const addCoffeeInput = () => {
-    const inputCoffee = document.getElementById('userInputCoffee');
-    let getNewCoffee = localStorage.setItem();
-    coffees.push(inputCoffee.value);
-    renderCoffee(inputCoffee.value);
-    console.log(coffees);
-}
-addCoffeeInput();
-// const inputCoffee = document.getElementById('userInputCoffee');
-
-
-//
-// let cuteCupAnimation = document.getElementsByClassName('cute-cup');
-// cuteCupAnimation.addEventListener('click', () => {
-//     cuteCupAnimation.style.transform = "translateY(10000%)";
-//     cuteCupAnimation.style.transition = "7s";
-// });
+// const addCoffeeInput = () => {
+//     let newCoffee = { id:(coffees.length + 1),name:add}
+//     const inputCoffee = document.getElementById('userInputCoffee');
+//     coffees.push(inputCoffee.value);
+//     renderCoffee(inputCoffee.value);
+//     tbody.innerHTML = renderCoffees(filteredCoffees);
+// }
