@@ -35,9 +35,9 @@ let coffees = [
     {id: 1, name: 'Pawfee Coffee', roast: 'light'},
     {id: 2, name: 'Panda Espresso', roast: 'light'},
     {id: 3, name: 'Cinnabun Cold Brew', roast: 'light'},
-    {id: 4, name: 'JaPANsa', roast: 'medium'},
-    {id: 5, name: 'American', roast: 'medium'},
-    {id: 6, name: 'Breakfast', roast: 'medium'},
+    {id: 4, name: 'Perfect Match-a', roast: 'medium'},
+    {id: 5, name: 'How you BEAN', roast: 'medium'},
+    {id: 6, name: '', roast: 'medium'},
     {id: 7, name: 'High', roast: 'dark'},
     {id: 8, name: 'Continental', roast: 'dark'},
     {id: 9, name: 'New Orleans', roast: 'dark'},
@@ -69,6 +69,16 @@ coffeeName.addEventListener('input', (e) => {
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 })
+
+// Attempt to allow user to add coffee selection
+const addCoffeeInput =() => {
+    const inputCoffee = document.getElementById('userInputCoffee');
+    coffees.push(inputCoffee.value);
+    renderCoffee(inputCoffee.value);
+    console.log(coffees);
+}
+addCoffeeInput();
+
 //
 // let cuteCupAnimation = document.getElementsByClassName('cute-cup');
 // cuteCupAnimation.addEventListener('click', () => {
