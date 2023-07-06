@@ -1,3 +1,8 @@
+.cursive{
+    font-family: 'Dancing Script', cursive;
+}
+
+
 table {
     border-collapse: collapse;
     margin: 15px 0;
@@ -84,7 +89,8 @@ td, th {
     font-family: 'Abril Fatface', cursive;
     font-size: 80px;
 }
-.cloud{
+
+.cloud {
     background-image: url("img/cute-cloud-kawaii-comic-character-icon-700-218790215.jpg");
     height: 50vh;
     background-size: cover;
@@ -94,19 +100,21 @@ td, th {
     text-align: center;
 }
 
-.cute-cup{
+.cute-cup {
     height: 50vh;
     background-size: cover;
     background-position: center;
     text-align: center;
     border-radius: 50%;
 }
-.cute-cup:hover{
-    transform: translateY(10000%);
-    transition: 10s;
+
+.cute-cup:hover {
+    height: 600px;
+    transition: 2s;
 }
 
 .sparkle {
     width: 30px;
     height: 30px;
 }
+

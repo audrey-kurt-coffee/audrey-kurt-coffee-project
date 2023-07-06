@@ -71,13 +71,20 @@ coffeeName.addEventListener('input', (e) => {
 })
 
 // Attempt to allow user to add coffee selection
-const addCoffeeInput =() => {
+// const setNewCoffee = localStorage.setItem("");
+
+
+
+const addCoffeeInput = () => {
     const inputCoffee = document.getElementById('userInputCoffee');
+    let getNewCoffee = localStorage.setItem();
     coffees.push(inputCoffee.value);
     renderCoffee(inputCoffee.value);
     console.log(coffees);
 }
 addCoffeeInput();
+// const inputCoffee = document.getElementById('userInputCoffee');
+
 
 //
 // let cuteCupAnimation = document.getElementsByClassName('cute-cup');
