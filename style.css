@@ -1,16 +1,6 @@
+/*Basic styling for page*/
 .cursive{
     font-family: 'Dancing Script', cursive;
-}
-
-
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
-}
-
-td, th {
-    border: 1px solid #000000;
-    padding: 5px 10px;
 }
 
 .cute-background {
@@ -25,9 +15,8 @@ td, th {
 .coffee-name-text-area {
     border: #fca2a2 dotted 2px;
     background-color: rgba(250, 250, 250, 0.22);
-
 }
-
+/*Rainbow text animation*/
 .rainbow-text {
     animation: rainbow 2.5s linear;
     animation-iteration-count: infinite;
@@ -73,12 +62,11 @@ td, th {
         color: rgb(255, 0, 127);
     }
 }
-
+/*style for images*/
 .rounded {
     border-radius: 100%;
 }
-
-
+/*Header style*/
 .custom-Header {
     width: 100%;
     height: 150px;
@@ -91,17 +79,7 @@ td, th {
     font-family: 'Abril Fatface', cursive;
     font-size: 80px;
 }
-
-.cloud {
-    background-image: url("img/cute-cloud-kawaii-comic-character-icon-700-218790215.jpg");
-    height: 50vh;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    opacity: .8;
-    text-align: center;
-}
-
+/*Giant cute cup style*/
 .cute-cup {
     height: 50vh;
     background-size: cover;
@@ -109,12 +87,12 @@ td, th {
     text-align: center;
     border-radius: 50%;
 }
-
+/*Giant cute cup animation*/
 .cute-cup:hover {
     height: 550px;
     transition: 2s;
 }
-
+/*sparkle gif style*/
 .sparkle {
     width: 30px;
     height: 30px;
@@ -123,17 +101,18 @@ td, th {
     width: 10vh;
     height: 10vh;
 }
+/*Coffee logo*/
 .hello-coffee{
     width: 450px;
     height: 450px;
-    /*margin: 10px;*/
 }
-
+/*coffee selection picture styling*/
 .coffee-pic {
     width: 150px;
     border: 1px dotted pink;
     border-radius: 50%;
 }
+/*styling for coffee selection cards*/
 div.coffee {
     border: 1px dashed white;
     background-color: rgba(255, 255, 255, 0.35);
@@ -145,14 +124,16 @@ div.coffee {
     text-align: center;
     padding: 10px;
 }
-
+/*make dropdown wider*/
 .roast-dropdown{
     width: 100%;
 }
+
 .width-full{
     width: 400px;
     height: 30px;
 }
+/*Font for titles*/
 .coffee-title {
     font-size: 4rem;
 }

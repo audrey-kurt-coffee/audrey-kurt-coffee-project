@@ -1,5 +1,5 @@
 "use strict"
-
+//function used for displaying coffee selection
 function renderCoffee(coffee) {
     let html = '<div class="coffee">';
     if (coffee.roast === 'cu-tea') {
@@ -17,14 +17,15 @@ function renderCoffee(coffee) {
     return html;
 }
 
+//Loop used for displaying coffees array
 function renderCoffees(coffees) {
     let html = '';
-    for (let i = coffees.length - 1; i >= 0; i--) {
+    for (let i = 0; i < coffees.length; i++) {
         html += renderCoffee(coffees[i]);
     }
     return html;
 }
-
+//select roast dropdown filtering
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     let selectedRoast = roastSelection.value;
@@ -38,7 +39,7 @@ function updateCoffees(e) {
 }
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
-
+//array of coffees
 let coffees = [
     {id: 1, name: 'Perfect Match-a', roast: 'cu-tea'},
     {id: 2, name: 'New Pen-guinea', roast: 'f-light roast'},
@@ -55,8 +56,9 @@ let coffees = [
     {id: 13, name: 'Black Ears, White Tummy', roast: 'bear-y dark'},
     {id: 14, name: 'Beautiful Butterfly Pea Tea', roast: 'cu-tea'},
 ];
-let tbody = document.querySelector('#coffees');
 
+//declaring variables
+let tbody = document.querySelector('#coffees');
 let submitButton = document.querySelector('#submit');
 let roastSelection = document.querySelector('#roast-selection');
 let coffeeName = document.querySelector('#coffee-name')
@@ -67,7 +69,7 @@ tbody.innerHTML = renderCoffees(coffees);
 submitButton.addEventListener('click', updateCoffees);
 addCoffeeBtn.addEventListener('click', addCoffeeInput);
 
-
+// user search for a coffee
 coffeeName.addEventListener('input', (e) => {
     e.preventDefault(); // don't submit the form, we just want to update the data
     let filteredCoffees = [];
@@ -82,6 +84,7 @@ coffeeName.addEventListener('input', (e) => {
 })
 
 
+// For user to add coffee
 function addCoffeeInput(e) {
     e.preventDefault();
     let newCoffee = {id: (coffees.length + 1), name: addCoffeeName.value, roast: addCoffeeRoast.value};
@@ -94,15 +97,3 @@ function addCoffeeInput(e) {
 addCoffeeInput();
 
 
-// Attempt to allow user to add coffee selection
-// const setNewCoffee = localStorage.setItem("");
-
-
-// const addCoffeeInput = () => {
-
-//     let newCoffee = { id:(coffees.length + 1),name:add}
-//     const inputCoffee = document.getElementById('userInputCoffee');
-//     coffees.push(inputCoffee.value);
-//     renderCoffee(inputCoffee.value);
-//     tbody.innerHTML = renderCoffees(filteredCoffees);
-// }
