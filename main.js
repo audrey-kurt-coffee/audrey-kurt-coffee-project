@@ -11,7 +11,7 @@ function renderCoffee(coffee) {
     } else if (coffee.roast === 'bear-y dark') {
         html += '<img src= "img/panda-coffee.jpg" class="coffee-pic">';
     }
-    html += '<h3>' + coffee.name + '</h3>';
+    html += '<h3>' + coffee.name + '</h3>' + '<img class="sparkle" src="img/giphy.gif"/>';
     html += '<p>' + coffee.roast + '</p>';
     html += '</div>';
     return html;

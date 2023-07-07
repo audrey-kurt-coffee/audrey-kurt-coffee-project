@@ -25,9 +25,9 @@
 <header  id="top" class="cute-background">
     <div class="container">
         <div class="row ">
-            <div class="col justify-content-center align-items-center d-flex">
+            <div class="col justify-content-center align-items-center d-flex"><img class="header-sparkle" src="img/giphy.gif"/>
                 <img src="img/Hello-coffee.jpeg" alt="hello kitty" style="border-radius: 50%"
-                                  class="hello-coffee"></div>
+                                  class="hello-coffee"><img class="header-sparkle" src="img/giphy.gif"/></div>
         </div>
     </div>
 </header>
@@ -36,8 +36,8 @@
 <!--Coffee Selection Heading-->
 <main class="container justify-content-start w-50">
     <div class="d-flex coffee-name-text-area mb-3">
-        <h1 class="cursive col d-flex justify-content-center p-2"><img class="sparkle" src="img/giphy.gif"/>Coffee
-            Selection!<img class="sparkle" src="img/giphy.gif"/></h1>
+        <h1 class="coffee-title cursive col d-flex justify-content-center p-2"><img class="header-sparkle" src="img/giphy.gif"/>Coffee
+            Selection!<img class="header-sparkle" src="img/giphy.gif"/></h1>
     </div>
 </main>
 <!--End coffee selection heading-->
@@ -47,19 +47,19 @@
         <!--            Display coffee names-->
         <div class="col-lg-6">
             <div class="container">
-                <div id="coffees" class="cursive row result-coffee coffee-name-text-area">
+                <div id="coffees" class="cursive row result-coffee coffee-name-text-area p-2">
                 </div>
             </div>
         </div>
         <!--        End Display of coffee selection-->
 
         <!--            Search Bar-->
-        <div class="col-lg-6 coffee-name-text-area">
+        <div class="col-lg-6 coffee-name-text-area p-2">
             <form
-                    class="coffee-name-text-area px-2 d-flex flex-column justify-content-center align-items-center cursive"
+                    class="coffee-name-text-area px-2 mb-3 d-flex flex-column justify-content-center align-items-center cursive"
                     role="search">
-                <h1 class="col-lg-6 d-flex justify-content-center p-2 w-100"><img class="sparkle" src="img/giphy.gif"/>Type
-                    Coffee Name<img class="sparkle" src="img/giphy.gif"/></h1>
+                <h2 class="type-coffee col-lg-6 d-flex justify-content-center p-2 w-100"><img class="header-sparkle" src="img/giphy.gif"/>Type
+                    Coffee Name<img class="header-sparkle" src="img/giphy.gif"/></h2>
                 <input id="coffee-name" type="search" class="my-3 form-control form-control-dark "
                        placeholder="Search Coffees"
                        aria-label="Search">
@@ -69,15 +69,15 @@
             <!--        Start dropdown menu-->
             <div class="roast">
                 <form class="coffee-name-text-area col-lg-6 w-100 mb-3 cursive d-flex flex-column justify-content-center align-items-center">
-                    <label for="roast-selection" class="flex-grow my-2"><h3><img class="sparkle" src="img/giphy.gif"/>Select
-                        Roast Option<img class="sparkle" src="img/giphy.gif"/></h3></label>
-                    <select id="roast-selection" class="w-75 py-2 my-2">
+                    <label for="roast-selection" class="flex-grow my-2"><h2 class="select-roast-option"><img class="header-sparkle" src="img/giphy.gif"/>Select
+                        Roast Option<img class="header-sparkle" src="img/giphy.gif"/></h2></label>
+                    <select id="roast-selection" class="w-75 py-2 my-1">
                         <option value="cu-tea">teas</option>
                         <option value="f-light roast">f-light roast</option>
                         <option value="medi-chum roast">medi-chum roast</option>
                         <option value="bear-y dark">bear-y dark</option>
                     </select>
-                    <button id="submit" class="btn bg-light border-white rounded" type="submit"><img class="sparkle"
+                    <button id="submit" class="btn bg-light border-white rounded my-3" type="submit"><img class="sparkle"
                                                                                                      src="img/giphy.gif"/>Search
                         Roasts<img class="sparkle" src="img/giphy.gif"/></button>
                 </form>
@@ -92,7 +92,7 @@
 
             <!--User add Coffee Names-->
             <form class="coffee-name-text-area mb-3 cursive d-flex flex-column justify-content-center align-items-center gap-1">
-                <h3>Add a Coffee</h3>
+                <h2 class="add-coffee"><img class="header-sparkle" src="img/giphy.gif"/>Add a Coffee<img class="header-sparkle" src="img/giphy.gif"/></h2>
                 <label class="w-75" for="add-coffee-roast">
                     <select class="roast-dropdown py-2 my-2" id="add-coffee-roast">
                         <option>cu-tea</option>
@@ -103,9 +103,9 @@
                 </label>
 
                 <!--                <label for="add-coffee-name">-->
-                <input class="input-name w-75" id="add-coffee-name" type="text" placeholder="Enter name">
+                <input class="input-name w-75 my-2" id="add-coffee-name" type="text" placeholder="Enter name">
                 <!--                </label>-->
-                <button id="add-coffee-btn" class="btn bg-light border-white rounded" type="submit"><img class="sparkle"
+                <button id="add-coffee-btn" class="btn bg-light border-white rounded mb-3" type="submit"><img class="sparkle"
                                                                                                          src="img/giphy.gif"/>Add
                     Coffee<img class="sparkle" src="img/giphy.gif"/></button>
             </form>

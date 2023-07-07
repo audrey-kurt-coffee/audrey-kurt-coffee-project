@@ -119,6 +119,10 @@ td, th {
     width: 30px;
     height: 30px;
 }
+.header-sparkle {
+    width: 10vh;
+    height: 10vh;
+}
 .hello-coffee{
     width: 450px;
     height: 450px;
@@ -139,6 +143,7 @@ div.coffee {
     align-items: center;
     width: 50%;
     text-align: center;
+    padding: 10px;
 }
 
 .roast-dropdown{
@@ -147,4 +152,10 @@ div.coffee {
 .width-full{
     width: 400px;
     height: 30px;
+}
+.coffee-title {
+    font-size: 4rem;
+}
+.select-roast-option, .type-coffee, .add-coffee {
+    font-size: 3rem;
 }
